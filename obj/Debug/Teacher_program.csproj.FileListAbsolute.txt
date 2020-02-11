@@ -1,0 +1,7 @@
+C:\projects\Teacher_program\bin\Debug\Teacher_program.exe.config
+C:\projects\Teacher_program\bin\Debug\Teacher_program.exe
+C:\projects\Teacher_program\bin\Debug\Teacher_program.pdb
+C:\projects\Teacher_program\obj\Debug\Teacher_program.Properties.Resources.resources
+C:\projects\Teacher_program\obj\Debug\Teacher_program.csproj.GenerateResource.cache
+C:\projects\Teacher_program\obj\Debug\Teacher_program.exe
+C:\projects\Teacher_program\obj\Debug\Teacher_program.pdb
