@@ -5,3 +5,9 @@ C:\projects\Teacher_program\obj\Debug\Teacher_program.Properties.Resources.resou
 C:\projects\Teacher_program\obj\Debug\Teacher_program.csproj.GenerateResource.cache
 C:\projects\Teacher_program\obj\Debug\Teacher_program.exe
 C:\projects\Teacher_program\obj\Debug\Teacher_program.pdb
+C:\projects\Teacher_program\obj\Debug\Teacher_program.csprojAssemblyReference.cache
+C:\projects\Teacher_program\obj\Debug\Teacher_program.Form1.resources
+C:\projects\Teacher_program\obj\Debug\Teacher_program.exit.resources
+C:\projects\Teacher_program\obj\Debug\Teacher_program.exit.ru-RU.resources
+C:\projects\Teacher_program\bin\Debug\ru-RU\Teacher_program.resources.dll
+C:\projects\Teacher_program\obj\Debug\ru-RU\Teacher_program.resources.dll

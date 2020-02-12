@@ -10,19 +10,17 @@ using System.Windows.Forms;
 
 namespace Teacher_program
 {
-    public partial class Form1 : Form
+    public partial class exit : Form
     {
-        public Form1()
+        public exit()
         {
             InitializeComponent();
         }
 
-        public void Close(object sender, EventArgs e)
+        private void b_exit(object sender, EventArgs e)
         {
-            Form1.ActiveForm.Enabled = false;
-            Application.Run(new exit());
-            //exit.;
-            //MessageBox.Show(" ");
+            Application.Exit();
         }
     }
 }
+ 
