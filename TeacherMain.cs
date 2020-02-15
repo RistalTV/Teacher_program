@@ -15,16 +15,37 @@ namespace Teacher_program
         public TeacherMain()
         {
             InitializeComponent();
+            DebugForm debugForm = new DebugForm();
+            debugForm.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonInfoProgram_Click(object sender, EventArgs e)
         {
-            MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            panelOfInfoButton.Dock = System.Windows.Forms.DockStyle.Fill;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void CloseButton_MouseEnter(object sender, EventArgs e)
         {
+            CloseButton.ForeColor = Color.FromArgb(18, 159, 123);
+        }
 
+        private void CloseButton_MouseLeave(object sender, EventArgs e)
+        {
+            CloseButton.ForeColor = Color.White;
+        }
+
+        private void CloseButton_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ExitToLoginForm_Click(object sender, EventArgs e)
+        {
+            loginForm LoginForm = new loginForm();
+            TeacherMain teacherMain = new TeacherMain();
+            teacherMain.Hide();
+            teacherMain.Close();
+            LoginForm.Show();
         }
     }
 }

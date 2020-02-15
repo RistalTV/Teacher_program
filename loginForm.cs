@@ -15,6 +15,8 @@ namespace Teacher_program
         public loginForm()
         {
             InitializeComponent();
+            DebugForm debugForm = new DebugForm();
+            debugForm.Show();
             this.loginField.Text = "Введите логин";
             this.loginField.ForeColor = Color.Gray;
             this.passField.Text = "Введите пароль";

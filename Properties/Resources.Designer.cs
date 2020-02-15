@@ -70,15 +70,6 @@ namespace Teacher_program.Properties {
             }
         }
         
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap passShow {
-            get {
-                object obj = ResourceManager.GetObject("passShow", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
         
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
