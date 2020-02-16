@@ -31,8 +31,14 @@
             this.buttonMenu = new System.Windows.Forms.Label();
             this.ButtonClose = new System.Windows.Forms.Label();
             this.MainPanel = new System.Windows.Forms.Panel();
+            this.panelOfInfoButton = new System.Windows.Forms.Panel();
+            this.textInfoButton = new System.Windows.Forms.Label();
+            this.TextInfoButtonUp = new System.Windows.Forms.Label();
             this.UpPanel = new System.Windows.Forms.Panel();
+            this.UpUpLeftPanel = new System.Windows.Forms.Panel();
+            this.CloseButton = new System.Windows.Forms.Label();
             this.LeftPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ExitToLoginForm = new System.Windows.Forms.Button();
             this.buttonInfoProgram = new System.Windows.Forms.Button();
             this.buttonEditTest = new System.Windows.Forms.Button();
@@ -43,18 +49,12 @@
             this.UpLeftPanel = new System.Windows.Forms.Panel();
             this.UpLeftLabel1 = new System.Windows.Forms.Label();
             this.UpLeftLabel2 = new System.Windows.Forms.Label();
-            this.panelOfInfoButton = new System.Windows.Forms.Panel();
-            this.TextInfoButtonUp = new System.Windows.Forms.Label();
-            this.textInfoButton = new System.Windows.Forms.Label();
-            this.UpUpLeftPanel = new System.Windows.Forms.Panel();
-            this.CloseButton = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.MainPanel.SuspendLayout();
+            this.panelOfInfoButton.SuspendLayout();
             this.UpPanel.SuspendLayout();
+            this.UpUpLeftPanel.SuspendLayout();
             this.LeftPanel.SuspendLayout();
             this.UpLeftPanel.SuspendLayout();
-            this.panelOfInfoButton.SuspendLayout();
-            this.UpUpLeftPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonMenu
@@ -90,6 +90,38 @@
             this.MainPanel.Size = new System.Drawing.Size(1280, 720);
             this.MainPanel.TabIndex = 0;
             // 
+            // panelOfInfoButton
+            // 
+            this.panelOfInfoButton.Controls.Add(this.textInfoButton);
+            this.panelOfInfoButton.Controls.Add(this.TextInfoButtonUp);
+            this.panelOfInfoButton.Location = new System.Drawing.Point(430, 47);
+            this.panelOfInfoButton.Name = "panelOfInfoButton";
+            this.panelOfInfoButton.Size = new System.Drawing.Size(1, 1);
+            this.panelOfInfoButton.TabIndex = 2;
+            // 
+            // textInfoButton
+            // 
+            this.textInfoButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textInfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textInfoButton.Location = new System.Drawing.Point(0, 85);
+            this.textInfoButton.Name = "textInfoButton";
+            this.textInfoButton.Size = new System.Drawing.Size(1, 0);
+            this.textInfoButton.TabIndex = 1;
+            this.textInfoButton.Text = "Эта программа создана для \r\nсоздания тестов и использования тестов. \r\n\r\n\r\n\r\nРазра" +
+    "ботал код: Скребнев Леонид ФИТУ 1-5.";
+            this.textInfoButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // TextInfoButtonUp
+            // 
+            this.TextInfoButtonUp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TextInfoButtonUp.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TextInfoButtonUp.Location = new System.Drawing.Point(0, 0);
+            this.TextInfoButtonUp.Name = "TextInfoButtonUp";
+            this.TextInfoButtonUp.Size = new System.Drawing.Size(1, 85);
+            this.TextInfoButtonUp.TabIndex = 0;
+            this.TextInfoButtonUp.Text = "О программе";
+            this.TextInfoButtonUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // UpPanel
             // 
             this.UpPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(198)))), ((int)(((byte)(153)))));
@@ -99,6 +131,30 @@
             this.UpPanel.Name = "UpPanel";
             this.UpPanel.Size = new System.Drawing.Size(850, 50);
             this.UpPanel.TabIndex = 1;
+            // 
+            // UpUpLeftPanel
+            // 
+            this.UpUpLeftPanel.Controls.Add(this.CloseButton);
+            this.UpUpLeftPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.UpUpLeftPanel.Location = new System.Drawing.Point(782, 0);
+            this.UpUpLeftPanel.Name = "UpUpLeftPanel";
+            this.UpUpLeftPanel.Size = new System.Drawing.Size(68, 50);
+            this.UpUpLeftPanel.TabIndex = 1;
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.AutoSize = true;
+            this.CloseButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CloseButton.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CloseButton.ForeColor = System.Drawing.Color.White;
+            this.CloseButton.Location = new System.Drawing.Point(33, 0);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(35, 41);
+            this.CloseButton.TabIndex = 0;
+            this.CloseButton.Text = "X";
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click_1);
+            this.CloseButton.MouseEnter += new System.EventHandler(this.CloseButton_MouseEnter);
+            this.CloseButton.MouseLeave += new System.EventHandler(this.CloseButton_MouseLeave);
             // 
             // LeftPanel
             // 
@@ -117,6 +173,14 @@
             this.LeftPanel.Name = "LeftPanel";
             this.LeftPanel.Size = new System.Drawing.Size(430, 720);
             this.LeftPanel.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 91);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(12, 629);
+            this.panel1.TabIndex = 2;
             // 
             // ExitToLoginForm
             // 
@@ -199,6 +263,7 @@
             this.buttonOpenCatalog.TabIndex = 1;
             this.buttonOpenCatalog.Text = "Открыть папку тестов";
             this.buttonOpenCatalog.UseVisualStyleBackColor = false;
+            this.buttonOpenCatalog.Click += new System.EventHandler(this.buttonOpenCatalog_Click);
             // 
             // buttonCreateTest
             // 
@@ -246,70 +311,6 @@
             this.UpLeftLabel2.TabIndex = 0;
             this.UpLeftLabel2.Text = "преподавателя";
             // 
-            // panelOfInfoButton
-            // 
-            this.panelOfInfoButton.Controls.Add(this.textInfoButton);
-            this.panelOfInfoButton.Controls.Add(this.TextInfoButtonUp);
-            this.panelOfInfoButton.Location = new System.Drawing.Point(430, 47);
-            this.panelOfInfoButton.Name = "panelOfInfoButton";
-            this.panelOfInfoButton.Size = new System.Drawing.Size(1, 1);
-            this.panelOfInfoButton.TabIndex = 2;
-            // 
-            // TextInfoButtonUp
-            // 
-            this.TextInfoButtonUp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TextInfoButtonUp.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextInfoButtonUp.Location = new System.Drawing.Point(0, 0);
-            this.TextInfoButtonUp.Name = "TextInfoButtonUp";
-            this.TextInfoButtonUp.Size = new System.Drawing.Size(1, 85);
-            this.TextInfoButtonUp.TabIndex = 0;
-            this.TextInfoButtonUp.Text = "О программе";
-            this.TextInfoButtonUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // textInfoButton
-            // 
-            this.textInfoButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textInfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textInfoButton.Location = new System.Drawing.Point(0, 85);
-            this.textInfoButton.Name = "textInfoButton";
-            this.textInfoButton.Size = new System.Drawing.Size(1, 0);
-            this.textInfoButton.TabIndex = 1;
-            this.textInfoButton.Text = "Эта программа создана для \r\nсоздания тестов и использования тестов. \r\n\r\n\r\n\r\nРазра" +
-    "ботал код: Скребнев Леонид ФИТУ 1-5.";
-            this.textInfoButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // UpUpLeftPanel
-            // 
-            this.UpUpLeftPanel.Controls.Add(this.CloseButton);
-            this.UpUpLeftPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.UpUpLeftPanel.Location = new System.Drawing.Point(782, 0);
-            this.UpUpLeftPanel.Name = "UpUpLeftPanel";
-            this.UpUpLeftPanel.Size = new System.Drawing.Size(68, 50);
-            this.UpUpLeftPanel.TabIndex = 1;
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.AutoSize = true;
-            this.CloseButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseButton.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CloseButton.ForeColor = System.Drawing.Color.White;
-            this.CloseButton.Location = new System.Drawing.Point(34, 0);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(34, 42);
-            this.CloseButton.TabIndex = 0;
-            this.CloseButton.Text = "X";
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click_1);
-            this.CloseButton.MouseEnter += new System.EventHandler(this.CloseButton_MouseEnter);
-            this.CloseButton.MouseLeave += new System.EventHandler(this.CloseButton_MouseLeave);
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 91);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(12, 629);
-            this.panel1.TabIndex = 2;
-            // 
             // TeacherMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -325,13 +326,13 @@
             this.Text = "TeacherMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MainPanel.ResumeLayout(false);
+            this.panelOfInfoButton.ResumeLayout(false);
             this.UpPanel.ResumeLayout(false);
+            this.UpUpLeftPanel.ResumeLayout(false);
+            this.UpUpLeftPanel.PerformLayout();
             this.LeftPanel.ResumeLayout(false);
             this.UpLeftPanel.ResumeLayout(false);
             this.UpLeftPanel.PerformLayout();
-            this.panelOfInfoButton.ResumeLayout(false);
-            this.UpUpLeftPanel.ResumeLayout(false);
-            this.UpUpLeftPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

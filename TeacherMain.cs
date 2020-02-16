@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Teacher_program.tests;
+using System.Diagnostics;
 
 namespace Teacher_program
 {
@@ -46,6 +48,18 @@ namespace Teacher_program
             teacherMain.Hide();
             teacherMain.Close();
             LoginForm.Show();
+        }
+
+        private void buttonOpenCatalog_Click(object sender, EventArgs e)
+        {
+            Test test = new Test();
+            string command = "C:\\TestsProgram";
+
+            if (test.ExistsCatalog())
+            {
+                MessageBox.Show("Каталог создан");
+                System.Diagnostics.Process.Start("Explorer.exe", command);
+            };
         }
     }
 }

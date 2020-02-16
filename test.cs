@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Media;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 
@@ -26,7 +27,14 @@ namespace Teacher_program.tests
         public bool ExistsCatalog()
         {
             Boolean Exists = false;
-
+            if (Directory.Exists("C:/TestsProgram"))
+            {
+                Exists = true;
+            }
+            else
+            {
+                Directory.CreateDirectory("C:/TestsProgram");
+            }
 
             return Exists;
         }
