@@ -22,13 +22,5 @@ namespace Teacher_program.tests
             SoundPlayer simpleSound = new SoundPlayer(urlSound);
             simpleSound.Play();
         }
-
-        public bool ExistsCatalog()
-        {
-            Boolean Exists = false;
-
-
-            return Exists;
-        }
     }
 }

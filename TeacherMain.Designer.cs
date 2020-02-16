@@ -33,28 +33,19 @@
             this.MainPanel = new System.Windows.Forms.Panel();
             this.UpPanel = new System.Windows.Forms.Panel();
             this.LeftPanel = new System.Windows.Forms.Panel();
-            this.ExitToLoginForm = new System.Windows.Forms.Button();
-            this.buttonInfoProgram = new System.Windows.Forms.Button();
-            this.buttonEditTest = new System.Windows.Forms.Button();
-            this.buttonCheckTest = new System.Windows.Forms.Button();
-            this.buttonLoadTest = new System.Windows.Forms.Button();
-            this.buttonOpenCatalog = new System.Windows.Forms.Button();
-            this.buttonCreateTest = new System.Windows.Forms.Button();
             this.UpLeftPanel = new System.Windows.Forms.Panel();
             this.UpLeftLabel1 = new System.Windows.Forms.Label();
             this.UpLeftLabel2 = new System.Windows.Forms.Label();
-            this.panelOfInfoButton = new System.Windows.Forms.Panel();
-            this.TextInfoButtonUp = new System.Windows.Forms.Label();
-            this.textInfoButton = new System.Windows.Forms.Label();
-            this.UpUpLeftPanel = new System.Windows.Forms.Panel();
-            this.CloseButton = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonCreateTest = new System.Windows.Forms.Button();
+            this.buttonOpenCatalog = new System.Windows.Forms.Button();
+            this.buttonLoadTest = new System.Windows.Forms.Button();
+            this.buttonCheckTest = new System.Windows.Forms.Button();
+            this.buttonInfoProgram = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.MainPanel.SuspendLayout();
-            this.UpPanel.SuspendLayout();
             this.LeftPanel.SuspendLayout();
             this.UpLeftPanel.SuspendLayout();
-            this.panelOfInfoButton.SuspendLayout();
-            this.UpUpLeftPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonMenu
@@ -80,7 +71,6 @@
             // MainPanel
             // 
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(212)))), ((int)(((byte)(166)))));
-            this.MainPanel.Controls.Add(this.panelOfInfoButton);
             this.MainPanel.Controls.Add(this.UpPanel);
             this.MainPanel.Controls.Add(this.LeftPanel);
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -93,7 +83,6 @@
             // UpPanel
             // 
             this.UpPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(198)))), ((int)(((byte)(153)))));
-            this.UpPanel.Controls.Add(this.UpUpLeftPanel);
             this.UpPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.UpPanel.Location = new System.Drawing.Point(430, 0);
             this.UpPanel.Name = "UpPanel";
@@ -103,10 +92,9 @@
             // LeftPanel
             // 
             this.LeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(212)))), ((int)(((byte)(202)))));
-            this.LeftPanel.Controls.Add(this.panel1);
-            this.LeftPanel.Controls.Add(this.ExitToLoginForm);
+            this.LeftPanel.Controls.Add(this.button7);
+            this.LeftPanel.Controls.Add(this.button6);
             this.LeftPanel.Controls.Add(this.buttonInfoProgram);
-            this.LeftPanel.Controls.Add(this.buttonEditTest);
             this.LeftPanel.Controls.Add(this.buttonCheckTest);
             this.LeftPanel.Controls.Add(this.buttonLoadTest);
             this.LeftPanel.Controls.Add(this.buttonOpenCatalog);
@@ -117,101 +105,6 @@
             this.LeftPanel.Name = "LeftPanel";
             this.LeftPanel.Size = new System.Drawing.Size(430, 720);
             this.LeftPanel.TabIndex = 0;
-            // 
-            // ExitToLoginForm
-            // 
-            this.ExitToLoginForm.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ExitToLoginForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitToLoginForm.Font = new System.Drawing.Font("Impact", 18F);
-            this.ExitToLoginForm.ForeColor = System.Drawing.Color.Maroon;
-            this.ExitToLoginForm.Location = new System.Drawing.Point(13, 635);
-            this.ExitToLoginForm.Margin = new System.Windows.Forms.Padding(0);
-            this.ExitToLoginForm.MaximumSize = new System.Drawing.Size(404, 85);
-            this.ExitToLoginForm.Name = "ExitToLoginForm";
-            this.ExitToLoginForm.Size = new System.Drawing.Size(404, 85);
-            this.ExitToLoginForm.TabIndex = 1;
-            this.ExitToLoginForm.Text = "Выход в меню авторизации";
-            this.ExitToLoginForm.UseVisualStyleBackColor = false;
-            this.ExitToLoginForm.Click += new System.EventHandler(this.ExitToLoginForm_Click);
-            // 
-            // buttonInfoProgram
-            // 
-            this.buttonInfoProgram.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.buttonInfoProgram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInfoProgram.Font = new System.Drawing.Font("Impact", 18F);
-            this.buttonInfoProgram.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.buttonInfoProgram.Location = new System.Drawing.Point(12, 527);
-            this.buttonInfoProgram.Name = "buttonInfoProgram";
-            this.buttonInfoProgram.Size = new System.Drawing.Size(404, 75);
-            this.buttonInfoProgram.TabIndex = 1;
-            this.buttonInfoProgram.Text = "О прогамме";
-            this.buttonInfoProgram.UseVisualStyleBackColor = false;
-            this.buttonInfoProgram.Click += new System.EventHandler(this.buttonInfoProgram_Click);
-            // 
-            // buttonEditTest
-            // 
-            this.buttonEditTest.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.buttonEditTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditTest.Font = new System.Drawing.Font("Impact", 18F);
-            this.buttonEditTest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.buttonEditTest.Location = new System.Drawing.Point(12, 446);
-            this.buttonEditTest.Name = "buttonEditTest";
-            this.buttonEditTest.Size = new System.Drawing.Size(404, 75);
-            this.buttonEditTest.TabIndex = 1;
-            this.buttonEditTest.Text = "Редактировать тест";
-            this.buttonEditTest.UseVisualStyleBackColor = false;
-            // 
-            // buttonCheckTest
-            // 
-            this.buttonCheckTest.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.buttonCheckTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCheckTest.Font = new System.Drawing.Font("Impact", 18F);
-            this.buttonCheckTest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.buttonCheckTest.Location = new System.Drawing.Point(12, 365);
-            this.buttonCheckTest.Name = "buttonCheckTest";
-            this.buttonCheckTest.Size = new System.Drawing.Size(404, 75);
-            this.buttonCheckTest.TabIndex = 1;
-            this.buttonCheckTest.Text = "Проверка теста";
-            this.buttonCheckTest.UseVisualStyleBackColor = false;
-            // 
-            // buttonLoadTest
-            // 
-            this.buttonLoadTest.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.buttonLoadTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLoadTest.Font = new System.Drawing.Font("Impact", 18F);
-            this.buttonLoadTest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.buttonLoadTest.Location = new System.Drawing.Point(12, 284);
-            this.buttonLoadTest.Name = "buttonLoadTest";
-            this.buttonLoadTest.Size = new System.Drawing.Size(404, 75);
-            this.buttonLoadTest.TabIndex = 1;
-            this.buttonLoadTest.Text = "Загрузить тест";
-            this.buttonLoadTest.UseVisualStyleBackColor = false;
-            // 
-            // buttonOpenCatalog
-            // 
-            this.buttonOpenCatalog.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.buttonOpenCatalog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOpenCatalog.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOpenCatalog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.buttonOpenCatalog.Location = new System.Drawing.Point(12, 203);
-            this.buttonOpenCatalog.Name = "buttonOpenCatalog";
-            this.buttonOpenCatalog.Size = new System.Drawing.Size(404, 75);
-            this.buttonOpenCatalog.TabIndex = 1;
-            this.buttonOpenCatalog.Text = "Открыть папку тестов";
-            this.buttonOpenCatalog.UseVisualStyleBackColor = false;
-            // 
-            // buttonCreateTest
-            // 
-            this.buttonCreateTest.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.buttonCreateTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCreateTest.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCreateTest.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonCreateTest.Location = new System.Drawing.Point(12, 97);
-            this.buttonCreateTest.Name = "buttonCreateTest";
-            this.buttonCreateTest.Size = new System.Drawing.Size(404, 100);
-            this.buttonCreateTest.TabIndex = 1;
-            this.buttonCreateTest.Text = "Создать тест";
-            this.buttonCreateTest.UseVisualStyleBackColor = false;
             // 
             // UpLeftPanel
             // 
@@ -246,69 +139,101 @@
             this.UpLeftLabel2.TabIndex = 0;
             this.UpLeftLabel2.Text = "преподавателя";
             // 
-            // panelOfInfoButton
+            // buttonCreateTest
             // 
-            this.panelOfInfoButton.Controls.Add(this.textInfoButton);
-            this.panelOfInfoButton.Controls.Add(this.TextInfoButtonUp);
-            this.panelOfInfoButton.Location = new System.Drawing.Point(430, 47);
-            this.panelOfInfoButton.Name = "panelOfInfoButton";
-            this.panelOfInfoButton.Size = new System.Drawing.Size(1, 1);
-            this.panelOfInfoButton.TabIndex = 2;
+            this.buttonCreateTest.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonCreateTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCreateTest.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCreateTest.ForeColor = System.Drawing.Color.Maroon;
+            this.buttonCreateTest.Location = new System.Drawing.Point(12, 97);
+            this.buttonCreateTest.Name = "buttonCreateTest";
+            this.buttonCreateTest.Size = new System.Drawing.Size(404, 100);
+            this.buttonCreateTest.TabIndex = 1;
+            this.buttonCreateTest.Text = "Создать тест";
+            this.buttonCreateTest.UseVisualStyleBackColor = false;
             // 
-            // TextInfoButtonUp
+            // buttonOpenCatalog
             // 
-            this.TextInfoButtonUp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TextInfoButtonUp.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextInfoButtonUp.Location = new System.Drawing.Point(0, 0);
-            this.TextInfoButtonUp.Name = "TextInfoButtonUp";
-            this.TextInfoButtonUp.Size = new System.Drawing.Size(1, 85);
-            this.TextInfoButtonUp.TabIndex = 0;
-            this.TextInfoButtonUp.Text = "О программе";
-            this.TextInfoButtonUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonOpenCatalog.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonOpenCatalog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOpenCatalog.Font = new System.Drawing.Font("Impact", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonOpenCatalog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.buttonOpenCatalog.Location = new System.Drawing.Point(12, 203);
+            this.buttonOpenCatalog.Name = "buttonOpenCatalog";
+            this.buttonOpenCatalog.Size = new System.Drawing.Size(404, 75);
+            this.buttonOpenCatalog.TabIndex = 1;
+            this.buttonOpenCatalog.Text = "Открыть папку тестов";
+            this.buttonOpenCatalog.UseVisualStyleBackColor = false;
             // 
-            // textInfoButton
+            // buttonLoadTest
             // 
-            this.textInfoButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textInfoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textInfoButton.Location = new System.Drawing.Point(0, 85);
-            this.textInfoButton.Name = "textInfoButton";
-            this.textInfoButton.Size = new System.Drawing.Size(1, 0);
-            this.textInfoButton.TabIndex = 1;
-            this.textInfoButton.Text = "Эта программа создана для \r\nсоздания тестов и использования тестов. \r\n\r\n\r\n\r\nРазра" +
-    "ботал код: Скребнев Леонид ФИТУ 1-5.";
-            this.textInfoButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buttonLoadTest.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonLoadTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLoadTest.Font = new System.Drawing.Font("Impact", 18F);
+            this.buttonLoadTest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.buttonLoadTest.Location = new System.Drawing.Point(12, 284);
+            this.buttonLoadTest.Name = "buttonLoadTest";
+            this.buttonLoadTest.Size = new System.Drawing.Size(404, 75);
+            this.buttonLoadTest.TabIndex = 1;
+            this.buttonLoadTest.Text = "Загрузить тест";
+            this.buttonLoadTest.UseVisualStyleBackColor = false;
+            this.buttonLoadTest.Click += new System.EventHandler(this.button3_Click);
             // 
-            // UpUpLeftPanel
+            // buttonCheckTest
             // 
-            this.UpUpLeftPanel.Controls.Add(this.CloseButton);
-            this.UpUpLeftPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.UpUpLeftPanel.Location = new System.Drawing.Point(782, 0);
-            this.UpUpLeftPanel.Name = "UpUpLeftPanel";
-            this.UpUpLeftPanel.Size = new System.Drawing.Size(68, 50);
-            this.UpUpLeftPanel.TabIndex = 1;
+            this.buttonCheckTest.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonCheckTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCheckTest.Font = new System.Drawing.Font("Impact", 18F);
+            this.buttonCheckTest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.buttonCheckTest.Location = new System.Drawing.Point(12, 365);
+            this.buttonCheckTest.Name = "buttonCheckTest";
+            this.buttonCheckTest.Size = new System.Drawing.Size(404, 75);
+            this.buttonCheckTest.TabIndex = 1;
+            this.buttonCheckTest.Text = "Проверка теста";
+            this.buttonCheckTest.UseVisualStyleBackColor = false;
+            this.buttonCheckTest.Click += new System.EventHandler(this.button3_Click);
             // 
-            // CloseButton
+            // buttonInfoProgram
             // 
-            this.CloseButton.AutoSize = true;
-            this.CloseButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CloseButton.Font = new System.Drawing.Font("Impact", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CloseButton.ForeColor = System.Drawing.Color.White;
-            this.CloseButton.Location = new System.Drawing.Point(34, 0);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(34, 42);
-            this.CloseButton.TabIndex = 0;
-            this.CloseButton.Text = "X";
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click_1);
-            this.CloseButton.MouseEnter += new System.EventHandler(this.CloseButton_MouseEnter);
-            this.CloseButton.MouseLeave += new System.EventHandler(this.CloseButton_MouseLeave);
+            this.buttonInfoProgram.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.buttonInfoProgram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInfoProgram.Font = new System.Drawing.Font("Impact", 18F);
+            this.buttonInfoProgram.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.buttonInfoProgram.Location = new System.Drawing.Point(12, 446);
+            this.buttonInfoProgram.Name = "buttonInfoProgram";
+            this.buttonInfoProgram.Size = new System.Drawing.Size(404, 75);
+            this.buttonInfoProgram.TabIndex = 1;
+            this.buttonInfoProgram.Text = "Редактировать тест";
+            this.buttonInfoProgram.UseVisualStyleBackColor = false;
+            this.buttonInfoProgram.Click += new System.EventHandler(this.button3_Click);
             // 
-            // panel1
+            // button6
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 91);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(12, 629);
-            this.panel1.TabIndex = 2;
+            this.button6.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Impact", 18F);
+            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.button6.Location = new System.Drawing.Point(12, 527);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(404, 75);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "О прогамме";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Impact", 18F);
+            this.button7.ForeColor = System.Drawing.Color.Maroon;
+            this.button7.Location = new System.Drawing.Point(12, 633);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(404, 75);
+            this.button7.TabIndex = 1;
+            this.button7.Text = "Выход в меню авторизации";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button3_Click);
             // 
             // TeacherMain
             // 
@@ -325,13 +250,9 @@
             this.Text = "TeacherMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MainPanel.ResumeLayout(false);
-            this.UpPanel.ResumeLayout(false);
             this.LeftPanel.ResumeLayout(false);
             this.UpLeftPanel.ResumeLayout(false);
             this.UpLeftPanel.PerformLayout();
-            this.panelOfInfoButton.ResumeLayout(false);
-            this.UpUpLeftPanel.ResumeLayout(false);
-            this.UpUpLeftPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,15 +270,9 @@
         private System.Windows.Forms.Button buttonLoadTest;
         private System.Windows.Forms.Button buttonOpenCatalog;
         private System.Windows.Forms.Button buttonCreateTest;
-        private System.Windows.Forms.Button ExitToLoginForm;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button buttonInfoProgram;
-        private System.Windows.Forms.Button buttonEditTest;
         private System.Windows.Forms.Button buttonCheckTest;
-        private System.Windows.Forms.Panel panelOfInfoButton;
-        private System.Windows.Forms.Label textInfoButton;
-        private System.Windows.Forms.Label TextInfoButtonUp;
-        private System.Windows.Forms.Panel UpUpLeftPanel;
-        private System.Windows.Forms.Label CloseButton;
-        private System.Windows.Forms.Panel panel1;
     }
 }

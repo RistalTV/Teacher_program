@@ -12,4 +12,3 @@ C:\projects\Teacher_program\obj\Debug\ru-RU\Teacher_program.resources.dll
 C:\projects\Teacher_program\obj\Debug\Teacher_program.exe
 C:\projects\Teacher_program\obj\Debug\Teacher_program.pdb
 C:\projects\Teacher_program\obj\Debug\Teacher_program.TeacherMain.resources
-C:\projects\Teacher_program\obj\Debug\Teacher_program.DebugForm.resources

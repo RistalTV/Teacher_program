@@ -15,8 +15,6 @@ namespace Teacher_program
         public StudentMain()
         {
             InitializeComponent();
-            DebugForm debugForm = new DebugForm();
-            debugForm.Show();
         }
     }
 }
